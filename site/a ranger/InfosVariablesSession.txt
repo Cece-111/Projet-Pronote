@@ -1,0 +1,23 @@
+Présentation des sessions PHP
+Une session en PHP correspond à une façon de stocker des données différentes pour chaque utilisateur en utilisant un identifiant de session unique.
+
+Les identifiants de session vont généralement être envoyés au navigateur via des cookies de session et vont être utilisés pour récupérer les données existantes de la session.
+
+Un des grands intérêts des sessions est qu’on va pouvoir conserver des informations pour un utilisateur lorsqu’il navigue d’une page à une autre. De plus, les informations de session ne vont cette fois-ci pas être stockées sur les ordinateurs de vos visiteurs à la différence des cookies mais plutôt côté serveur ce qui fait que les sessions vont pouvoir être beaucoup plus sûres que les cookies.
+
+Notez toutefois que le but des sessions n’est pas de conserver des informations indéfiniment mais simplement durant une «session». Une session démarre dès que la fonction session_start() est appelée et se termine en général dès que la fenêtre courante du navigateur est fermée.
+
+Concrètement
+
+Sur chaque page du site web
+<?php session_start(); ?>
+
+Sur la page où les variables sont créées.
+
+// création des variables de session
+$_SESSION["prenom"] = $prenom;
+$_SESSION["nom"] = $nom;
+$_SESSION["statut"] = $statut;
+
+Sur chaque page sur laquelle on souhaite accéder aux variables
+On peut accéder à $_SESSION["prenom"] ...

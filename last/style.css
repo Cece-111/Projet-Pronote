@@ -1,0 +1,116 @@
+label
+{
+	/* Pour être surs que toutes les étiquettes ont la même taille et sont correctement alignées */
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+}
+
+body
+{
+	background-color: #EBF5FB;
+}
+
+.clignote
+{
+	color: cyan;
+	animation: clignote 3s linear infinite;
+}
+
+@keyframes clignote {  
+	50% { color:yellow }
+}
+
+.erreur
+{
+	color: red;
+	font-family: OCR A Std, monospace;
+}
+
+.centrer
+{
+	margin: auto;
+}
+
+.button
+{
+	font-family: courier, monospace;
+}
+
+table, th, transparent
+{
+	border: 1px solid RGB(128,128,128);
+}
+
+th
+{
+	font-style: italic;
+}
+
+td, th, tr
+{
+	padding: 8px;
+	color: #BABABA;
+	font-weight: bold;
+}
+
+#bienvenue
+{
+	font-family: OCR A Std, monospace;
+	text-align: center;
+}
+
+#titre
+{
+	font-family: helvetica;
+	text-align: left;
+	margin: 10px 0px 0px 0px;
+	color : white;
+}
+
+#carre {
+	width: 30%;
+	padding: 60% 0 0 0;
+	background: #6AB6FF;
+	margin: 0px 0px 0px 30px;
+}
+
+
+#image
+{
+	margin: 0px 10px 10px 10px;
+}
+
+img
+{
+	display: block;
+	margin-left: : auto;
+	margin-right: auto;
+}
+
+
+.centricite
+{
+	margin: 0px 100px 0px 100px;
+}
+
+#barre_fixe
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background: #6AB6FF;
+}
+
+#margeGauche
+{
+	margin-left: 10px;
+}
+
+#notes
+{
+	text-align:right;
+	top: 0px;
+	left: 10px;
+}
